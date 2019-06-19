@@ -3,3 +3,5 @@
 .idea
 JavaFoundations.iml
 target/
+src/main/resources/
+src/test/
