@@ -4,23 +4,23 @@ public class Dog extends Animal {
     private String name;
     private int age;
     private double weight;
-    private String animal;
+    private String sex;
 
-    public Dog(String name,int age,double weight,String animal){
-        this.name=name;
+    public Dog(String name, int age, double weight,String sex) {
+        this.name = name;
         this.age = age;
         this.weight = weight;
-        this.animal = animal;
-
+        this.sex=sex;
     }
 
-    public void printDog(){
-        System.out.println("Name: "+name+" Age: "+age+" Weight: "+weight+" Animal: "+animal);
+    public void printDog() {
+        System.out.println("Name: " + name + " Age: " + age + " Weight: " + weight + " Sex: " + sex);
     }
+
     // Переопределил метода "meet"
-    public void meet(){
+    public void meet() {
         System.out.print(" Встреча хозяина : ");
-        System.out.println("Печенька мне в рот, ТЫ ПРИШЕЛ)))!!! Ура,как я рад!!!");
+        System.out.println("Печенька мне в рот, ТЫ ПРИШЕЛ)))!!! Ура,Гав!!!");
     }
 
     public String getName() {
@@ -28,7 +28,6 @@ public class Dog extends Animal {
     }
 
     public void setName(String name) {
-
         this.name = name;
     }
 
@@ -54,7 +53,5 @@ public class Dog extends Animal {
         } else {
             System.out.println("Ошибка! Вес не может быть отрицательным или равным 0");
         }
-
     }
-
 }

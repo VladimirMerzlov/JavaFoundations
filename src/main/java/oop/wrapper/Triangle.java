@@ -1,26 +1,26 @@
 package oop.wrapper;
 
-public class AreaOfTriangle {
-    private double R = 0;
-    private double a = 0, b = 0, c = 0;
+public class Triangle {
+    private double r ;
+    private double a , b, c;
 
-    public AreaOfTriangle(double R, double a, double b, double c) {
-        this.R = R;
+    public Triangle(double r, double a, double b, double c) {
+        this.r = r;
         this.a = a;
         this.b = b;
         this.c = c;
     }
 
     public void printAreaOfTriangle() {
-        System.out.println("Площадь треугольника со сторонами a=" + a + "  b=" + b + "  c=" + c + " и радиусом описаной окружности R=" + R + " равна S=" + (a * b * c) / 4 * R + " кв.ед.");
+        System.out.println("Площадь треугольника со сторонами a=" + a + "  b=" + b + "  c=" + c + " и радиусом описаной окружности R=" + r + " равна S=" + (a * b * c) / 4 * r + " кв.ед.");
     }
 
     public double getR() {
-        return R;
+        return r;
     }
 
-    public void setR(double R) {
-        this.R = R;
+    public void setR(double r) {
+        this.r = r;
     }
 
     public double getA() {
@@ -46,6 +46,4 @@ public class AreaOfTriangle {
     public void setC(double c) {
         this.c = c;
     }
-
-
 }

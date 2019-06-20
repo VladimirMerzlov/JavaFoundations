@@ -4,19 +4,17 @@ public class Cat extends Animal {
     private String name;
     private int age;
     private double weight;
-    private String animal;
+    private String sex;
 
-    public Cat(String name, int age, double weight, String animal) {
+    public Cat(String name, int age, double weight, String sex) {
         this.name = name;
         this.age = age;
         this.weight = weight;
-        this.animal = animal;
-
+        this.sex = sex;
     }
 
     public void printCat() {
-        System.out.println("Name: " + name + " Age: " + age + " Weight: " + weight + " Animal: " + animal);
-
+        System.out.println("Name: " + name + " Age: " + age + " Weight: " + weight + " Sex: " + sex);
     }
 
     // Переопределил метод "eat"
@@ -30,7 +28,6 @@ public class Cat extends Animal {
     }
 
     public void setName(String name) {
-
         this.name = name;
     }
 
@@ -56,9 +53,6 @@ public class Cat extends Animal {
         } else {
             System.out.println("Ошибка! Вес не может быть отрицательным или равным 0");
         }
-
     }
-
-
 }
 
