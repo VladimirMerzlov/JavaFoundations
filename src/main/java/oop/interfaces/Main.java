@@ -8,11 +8,13 @@ public class Main {
     public static void main(String[] args) {
         Person manGena = new Person("Gena", "Pupkin", 30);
         Person manAvtondil = new Person("Avtondil", "Pupkin", 9);
-
+        Person manAvtondil1 = new Person("Avtondil", "Pupkin", 15);
+        Person manAvtondil3 = new Person("Avtondil", "Pupkin", 45);
+        Person manAvtondil2 = new Person("Avtondil", "Pipkin", 9);
         Person manYanis = new Person("Янис", "Леопольдов", 32);
         Person manArtur = new Person("Артур", "Пирожков", 15);
         System.out.println("SORT ARRAY OF MANS");
-        Person[] people = new Person[]{manYanis, manArtur, manGena, manAvtondil};
+        Person[] people = new Person[]{manYanis, manArtur, manGena, manAvtondil, manAvtondil1, manAvtondil2, manAvtondil3};
         printArray(people);
         System.out.println("Отсортировали МУЖИКОВ");
         Arrays.sort(people);
