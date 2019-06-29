@@ -6,11 +6,11 @@ public class Dog extends Animal {
     private double weight;
     private String sex;
 
-    public Dog(String name, int age, double weight,String sex) {
+    public Dog(String name, int age, double weight, String sex) {
         this.name = name;
         this.age = age;
         this.weight = weight;
-        this.sex=sex;
+        this.sex = sex;
     }
 
     public void printDog() {

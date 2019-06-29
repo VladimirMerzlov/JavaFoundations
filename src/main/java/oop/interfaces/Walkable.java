@@ -1,7 +1,8 @@
 package oop.interfaces;
 
 public interface Walkable {
-    int getwalk(int distance);
+    double getWalk(int distance);
 
-    public static final int MAX_WALK_DISTANCE = 500;
+    int MAX_WALK_DISTANCE = 20;//км
+    double AVERAGE_SPEED = 6; // средняя скорость пешехода км/ч
 }

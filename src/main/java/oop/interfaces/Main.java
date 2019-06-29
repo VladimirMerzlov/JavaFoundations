@@ -19,6 +19,16 @@ public class Main {
         System.out.println("Отсортировали МУЖИКОВ");
         Arrays.sort(people);
         printArray(people);
+        System.out.print("Использование переопределенного метода toString: ");
+        System.out.println(manGena.toString());
+        double temp = manArtur.getWalk(25);
+        if (temp >= 0) {
+            System.out.println(manArtur.getName() + " : " + "Среднее время в пути: " + temp + "ч");
+        } else {
+            System.out.println(manArtur.getName() + " : оЙ,да не звезди.Ты столько не мог пройти!");
+        }
+
+
     }
 
     public static void printArray(Person[] people) {

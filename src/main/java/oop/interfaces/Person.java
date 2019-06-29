@@ -2,7 +2,7 @@ package oop.interfaces;
 
 import static java.lang.Integer.parseInt;
 
-public class Person implements Comparable<Person>,Walkable {
+public class Person implements Comparable<Person>, Walkable {
     private String name;
     private String surname;
     private int age;
@@ -33,13 +33,19 @@ public class Person implements Comparable<Person>,Walkable {
         }
         return result;
     }
-    @Override
-    public String toString() {
-        return  "name: " + name + ", " +"surname: " + surname +", "+"age: " + age;
-    }
 
     @Override
-    public int getwalk(int distance) {
-return 0;
+    public String toString() {
+        return "name: " + name + ", " + "surname: " + surname + ", " + "age: " + age;
+    }
+
+
+    @Override
+    public double getWalk(int distance) {
+        if (distance <= MAX_WALK_DISTANCE) {
+            double time = distance / AVERAGE_SPEED;
+            return time;
+        }
+        return -1;
     }
 }

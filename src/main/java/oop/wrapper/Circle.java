@@ -1,7 +1,7 @@
 package oop.wrapper;
 
 public class Circle {
-    private double r ;
+    private double r;
     public static final double MY_PI = 3.14;
 
     public Circle(double r) {

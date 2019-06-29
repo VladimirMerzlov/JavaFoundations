@@ -1,8 +1,8 @@
 package oop.wrapper;
 
 public class Triangle {
-    private double r ;
-    private double a , b, c;
+    private double r;
+    private double a, b, c;
 
     public Triangle(double r, double a, double b, double c) {
         this.r = r;

@@ -20,5 +20,11 @@ public class Main {
         System.out.println("Выводим прежний возраст,используя getAge:  " + dog2.getAge());
         dog2.setAge(60);
         System.out.println("Выводим измененный возраст,используя getAge:  " + dog2.getAge());
+        if (dog2.getWalk(30) >= 0) {
+            System.out.println(dog2.getName() + " : " + "Среднее время в пути: " + dog2.getWalk(5) + "ч");
+        } else {
+            System.out.println(dog2.getName() + " : Хоть ты и не умеешь разговаривать , но не звезди.Ты столько не мог пройти!");
+        }
+
     }
 }
