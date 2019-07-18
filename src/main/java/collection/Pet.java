@@ -1,4 +1,4 @@
-package collection_test;
+package collection;
 
 public class Pet {
     private String name;
